@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Movies.com</title>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<nav>
+			<div class="nav">
+				<div class="logo">
+					<a href="#" class="logo-text">Bookie</a>
+				</div>
+				<form>
+					<input
+						class="search-input"
+						placeholder="Search by name..."
+						type="search"
+					/>
+				</form>
+			</div>
+		</nav>
+
+		<main class="main">
+			<aside class="aside">
+				<button class="slide">></button>
+				<div class="slide-wrapper">
+					<h1 class="aside-title">Genres</h1>
+					<div class="genres">
+						<ul class="genres-list"></ul>
+					</div>
+				</div>
+			</aside>
+
+			<section class="movie-main">
+				<h2 class="heading">NOW PLAYING</h2>
+				<div class="cards"></div>
+			</section>
+		</main>
+		<section class="modal"></section>
+
+		<section class="checkout">
+			<button class="back-btn close-checkout btn">&larr; back</button>
+			<div class="checkout-summary">
+				<h2>Summary</h2>
+				<h4 class="checkout-title">Black Adam</h4>
+				<div class="wrapper">
+					<span>Classic Ticket</span>
+					<span class="amount">$250</span>
+				</div>
+				<div class="tickets wrapper">
+					<label for="tickets">Number of tickets</label>
+					<input type="number" value="1" id="tickets" min="1" />
+				</div>
+
+				<div class="wrapper">
+					<span>Conveyance Fee(1.75%)</span>
+					<span class="tax">$8.75</span>
+				</div>
+				<div class="wrapper">
+					<span>Sub total</span>
+					<span class="total-amount">$1.75</span>
+				</div>
+
+				<button class="btn close-checkout">Proceed to checkout</button>
+			</div>
+		</section>
+
+		<script src="./index.js"></script>
+	</body>
+</html>
